@@ -6,7 +6,7 @@ echo Root check passed!
 cd ~/Downloads/
 curl -fsSL https://rpm.librewolf.net/librewolf-repo.repo | pkexec tee /etc/yum.repos.d/librewolf.repo
 dnf install librewolf -y
-echo installing RPM's
+echo installing RPMs
 curl -Lo GoogleChrome.rpm https://www.google.com/chrome/next-steps.html?platform=linux&statcb=0&installdataindex=empty&defaultbrowser=0#
 curl -Lo vencord.rpm https://vencord.dev/download/vesktop/amd64/rpm
 dnf install vencord.rpm -y
