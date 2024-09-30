@@ -1,7 +1,5 @@
 #!/bin/bash
 
-if [ "$(whoami)" == "root" ];
-then
 echo Root check passed Make sure this is sudo
 cd ~/Downloads/
 curl -fsSL https://rpm.librewolf.net/librewolf-repo.repo | pkexec tee /etc/yum.repos.d/librewolf.repo
@@ -26,4 +24,3 @@ sed -i "s|Exec=zed|Exec=$HOME/.local/zed.app/libexec/zed-editor|g" ~/.local/shar
 echo installing QT Creator
 curl -Lo QTCreator.run https://d13lb3tujbc8s0.cloudfront.net/onlineinstallers/qt-online-installer-linux-x64-4.8.1.run
 ./QTCreator.run
-fi 
