@@ -3,7 +3,7 @@ if ["$(whoami)" == "root"]
 user = Username here 
 then 
 echo Root check passed Make sure this is sudo
-cd $user/Downloads/
+cd /home/$user/Downloads/
 curl -fsSL https://rpm.librewolf.net/librewolf-repo.repo | pkexec tee /etc/yum.repos.d/librewolf.repo
 dnf install librewolf -y
 echo installing RPMs
